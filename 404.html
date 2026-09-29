@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --bg: #FFFFFF;
+      --text: #1A1A1A;
+      --accent: #6B6B6B;
+      --bg-secondary: #F2F2F2;
+      --border: rgba(26, 26, 26, .14);
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      min-height: 100dvh;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8vw 6vw;
+    }
+
+    .eyebrow {
+      font-size: .75rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.2rem, 7vw, 3.6rem);
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      letter-spacing: -.01em;
+    }
+
+    h1 em {
+      font-style: italic;
+    }
+
+    p {
+      color: #333;
+      max-width: 460px;
+      margin: 0 auto 2.2rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .big {
+      font-family: var(--serif);
+      font-size: clamp(4rem, 14vw, 7rem);
+      font-style: italic;
+      color: var(--bg-secondary);
+      -webkit-text-stroke: 1.5px var(--border);
+      position: relative;
+      line-height: 1;
+      margin-bottom: .4rem;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .95rem 1.7rem;
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 500;
+      border: 1px solid var(--text);
+      transition: all .2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--text);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <span class="big">404</span>
+    <span class="eyebrow">Error 404</span>
+    <h1>Esta página <em>no existe</em>.</h1>
+    <p>El enlace que seguiste puede estar roto o la página fue movida. Volvamos al inicio.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="./"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+      <a class="btn btn-secondary" href="https://wa.me/593998461910" target="_blank" rel="noopener noreferrer"><i
+          class="fa-brands fa-whatsapp">
+        </i> WhatsApp</a>
+    </div>
+  </div>
+</body>
+
+</html>
